@@ -1,2 +1,2 @@
 # TerbiumSDK
-Terbium SDK NPM
+Terbium SDK Framework

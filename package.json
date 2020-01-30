@@ -1,0 +1,37 @@
+{
+  "name": "terbiumsdk",
+  "version": "2.1.2",
+  "description": "TerbiumSDK Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerbiumSDK/TerbiumSDK.git"
+  },
+  "keywords": [
+    "Terbium",
+    "SDK",
+    "TerbiumSDK",
+    "Cordova",
+    "Electron",
+    "Node JS",
+    "ASP.NET",
+    "iOS",
+	"IPadOS",
+	"macOS",
+    "Android",
+    "OSX",
+    "Windows",
+    "UI",
+	"Apple",
+	"UI Framework"
+  ],
+  "author": "Christopher Bishop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TerbiumSDK/TerbiumSDK/issues"
+  },
+  "homepage": "https://github.com/TerbiumSDK/TerbiumSDK#readme"
+}
