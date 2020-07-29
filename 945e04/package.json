@@ -1,0 +1,55 @@
+{
+  "name": "com.terbiumsdk.example",
+  "displayName": "TerbiumSDK",
+  "version": "1.0.0",
+  "description": "A sample Terbium SDK application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerbiumSDK/TerbiumSDK.git"
+  },
+  "keywords": [
+    "TerbiumSDK",
+    "Cordova",
+    "Electron",
+    "Node JS",
+    "ASP.NET",
+    "iOS",
+    "iPadOS",
+    "Android",
+    "macOS",
+    "Windows",
+    "UI",
+    "React",
+    "Ionic",
+    "Apple",
+    "Christopher Bishop"
+  ],
+  "author": "Christopher Bishop",
+  "license": "MIT",
+  "dependencies": {
+    "cordova-browser": "^6.0.0",
+    "cordova-plugin-advanced-http": "^3.0.0",
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-file": "^6.0.2",
+    "fs-extra": "^9.0.1",
+    "ncp": "^2.0.0",
+    "terser": "^4.8.0"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-advanced-http": {},
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-device": {}
+    },
+    "platforms": [
+      "browser"
+    ]
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.4"
+  }
+}

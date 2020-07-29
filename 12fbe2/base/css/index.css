@@ -1,0 +1,92 @@
+﻿:root {
+    --primary: #e01e5a; 
+    --primary-light: #f35787; 
+    --primary-dark: #cd0140; 
+
+    --secondary: #2fb67c; 
+    --secondary-light: #62dda8; 
+    --secondary-dark: #0e985d; 
+     
+    --tertiary: #ecb22d; 
+    --tertiary-light: #f5cd72;  
+    --tertiary-dark: #c28906; 
+
+    --bg-color: var(--white);
+    --text-color: var(--black);
+    --text-selection-bg: var(--tertiary-light);
+    --text-selection-color:var(--tertiary-dark);
+
+    --side-content-bg: var(--primary);
+    --view-load-spinner: var(--gray-5-dark);
+    --no-landscape-bg: var(--white);
+
+
+    /*Page Variables*/
+    --desktop-header-height: 48px;
+    --desktop-header-bg-color: var(--black); 
+}
+
+.section-gap{height:50px;}
+.section-gap-inside{height:20px;}
+.shadow{box-shadow: 0px 8px 10px 3px rgba(0,0,0,0.10);}
+ 
+
+.center-content{  
+    width: auto; 
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2;
+}
+
+.text-section-header{
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: 'SF SemiBold';
+    color: var(--black);
+}
+
+.text-section-header-inside {
+    font-size: 24px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: 'SF SemiBold';
+    color: var(--secondary);
+}
+
+.text-section{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size:17px;
+    line-height: 1.47059;
+    color:var(--gray-5-dark);
+    letter-spacing: -.022em; 
+}
+
+.text-section-inside { 
+    font-size:17px;
+    line-height: 1.47059;
+    color:var(--gray-5-dark);
+    letter-spacing: -.022em; 
+}
+
+.example-section{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size:17px;
+    line-height: 1.47059;
+    color:var(--gray-5-dark);
+    letter-spacing: -.022em; 
+    border-radius:6px;
+    border:1px solid var(--gray-5-light);
+    padding:6px;
+}
+

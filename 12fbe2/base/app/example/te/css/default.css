@@ -1,0 +1,35 @@
+.page-css{}
+
+.page-css .left-navigation{
+    position:absolute;
+    left:0px;
+    top:0px;
+    height:100%;
+    width: 60px;
+    background-color: var(--primary); 
+    z-index:2;
+}
+
+.page-css .page-body-wrap {
+    position:absolute;
+    left:60px;
+    top:0px;
+    height:100%;
+    width: calc(100% - 60px);
+    border-left: 1px solid var(--gray-6-light); 
+    z-index:1;
+}
+.page-css .page-body{padding:10px;}
+
+.page-css .left-navigation-item {
+    height:52px;
+    position:relative;
+    left:4px;
+    border-top-left-radius:30px;
+    border-bottom-left-radius:30px;
+    width:100%;
+    color:var(--white);
+    margin-bottom:10px;
+}
+
+.page-css .left-navigation-item[group-active] {background-color:var(--white); color:var(--primary); }

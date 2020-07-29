@@ -1,0 +1,92 @@
+<!--Dont need to write all this stuff out we could simply use a template and bind it to an object but 
+    thought might be good to write it out so designers could see the layout flow, but in reality (and on terbiums main website)
+    this is using a {{each(data)}} command using Terbium.Template to auto fill this entire section from JSON-->
+<tb-section full-width bg-color="--gray-7-light" pad-bottom="20px">
+	<tb-content class="center-content">
+        <tb-text text-size="13px" pad-top="40px" color="--gray-2-light">
+            Features are subject to change. Some features may not be available in all regions or all languages.
+        </tb-text>
+        <tb-content class="footer-devide"></tb-content>
+        <tb-content>
+            <tb-content on-click="openTerbiumSDK()" space-bottom="20px">
+                <tb-text text-size="22px" line-height="32px" semi-bold-font>TerbiumSDK</tb-text>
+            </tb-content> 
+            <tb-content class="footer-navigation">
+                <tb-content class="item">
+                    <tb-content>
+                        <tb-text class="footer-section-caption">Discover</tb-text> 
+                        <tb-content>
+                           <tb-text on-click="openTerbiumSDK('/discover')" class="footer-section-link">UXCL 14</tb-text>
+                           <tb-text on-click="openTerbiumSDK('/discover')" class="footer-section-link">Benefits</tb-text>
+                           <tb-text on-click="openTerbiumSDK('/discover')" class="footer-section-link">Terbium Blogs</tb-text>
+                           <tb-text on-click="openTerbiumSDK('/discover')" class="footer-section-link">Terbium News</tb-text>
+                        </tb-content>
+                    </tb-content>
+                </tb-content>
+                <tb-content class="item">
+                    <tb-content>
+                        <tb-text class="footer-section-caption">Developers</tb-text> 
+                        <tb-content>
+                            <tb-text on-click="openTerbiumSDK('/developers')" class="footer-section-link">Getting Started</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/developers')" class="footer-section-link">What's New</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/developers')" class="footer-section-link">Basic Concepts</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/developers')" class="footer-section-link">Plugins</tb-text> 
+                            <tb-text on-click="openTerbiumSDK('/developers')" class="footer-section-link">Performance</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/developers')" class="footer-section-link">Troubleshooting</tb-text> 
+                        </tb-content>
+                    </tb-content>
+                </tb-content>
+                <tb-content class="item">
+                    <tb-content>
+                        <tb-text class="footer-section-caption">Designers</tb-text> 
+                        <tb-content>
+                            <tb-text on-click="openTerbiumSDK('/designers')" class="footer-section-link">Getting Started</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/designers')" class="footer-section-link">Basic Concepts</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/designers')" class="footer-section-link">What's New</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/designers')" class="footer-section-link">Plugins</tb-text> 
+                            <tb-text on-click="openTerbiumSDK('/designers')" class="footer-section-link">Best Practices</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/designers')" class="footer-section-link">Performance</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/designers')" class="footer-section-link">Troubleshooting</tb-text> 
+                        </tb-content>
+                    </tb-content>
+                </tb-content> 
+                <tb-content class="item">
+                    <tb-content>
+                        <tb-text class="footer-section-caption">Distribute</tb-text> 
+                        <tb-content>
+                            <tb-text on-click="openTerbiumSDK('/distribute')" class="footer-section-link">Universal Publish</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/distribute')" class="footer-section-link">Apple Store</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/distribute')" class="footer-section-link">Google Play</tb-text>
+                            <tb-text on-click="openTerbiumSDK('/distribute')" class="footer-section-link">Publish Website</tb-text>
+                        </tb-content>
+                    </tb-content> 
+                </tb-content>
+                <tb-content class="item">
+                    <tb-content>
+                        <tb-text class="footer-section-caption">Support</tb-text> 
+                        <tb-content>
+                            <tb-text on-click="openTerbiumSDK('/support')" class="footer-section-link">Support Request</tb-text> 
+                            <tb-text on-click="openTerbiumSDK('/support')" class="footer-section-link">Forums</tb-text> 
+                            <tb-text on-click="openTerbiumSDK('/support')" class="footer-section-link">Feedback</tb-text> 
+                            <tb-text on-click="openTerbiumSDK('/support')" class="footer-section-link">F.A.Q's</tb-text> 
+                            <tb-text on-click="openTerbiumSDK('/support')" class="footer-section-link">Tutorials</tb-text>  
+                        </tb-content>
+                    </tb-content>
+                </tb-content>  
+            </tb-content>  
+        </tb-content>
+
+        <tb-text text-size="13px" pad-top="20px" color="--gray-2-light">
+            To view the latest developer news, <tb-text on-click="openTerbiumSDK('/news')" inline color="--primary">visit News and Updates</tb-text>.
+        </tb-text>
+        <tb-content class="footer-devide"></tb-content>
+        <tb-text text-size="13px" pad-bottom="20px" color="--gray-2-light">
+            Copyright &copy; {{year}}. All rights reserved. 
+            <tb-text on-click="openTerbiumSDK('/toc')" space-left="10px" inline color="--primary">Terms of Use</tb-text> 
+            <tb-content top="2px" inline height="10px" bg-color="--gray-1-dark" width="1px" space-left="10px" space-right="10px"></tb-content>
+            <tb-text on-click="openTerbiumSDK('/privacy')" inline color="--primary">Privacy Policy</tb-text> 
+            <tb-content top="2px" inline height="10px" bg-color="--gray-1-dark" width="1px" space-left="10px" space-right="10px"></tb-content>
+            <tb-text on-click="openTerbiumSDK('/license')" inline color="--primary">License Agreements</tb-text>.
+        </tb-text>
+    </tb-content>
+</tb-section>

@@ -1,0 +1,25 @@
+﻿
+/*Dark Mode Stuff->This can go in a seperate file.*/
+.dark-mode {
+    --primary: var(--blue-dark); 
+    --primary-light: var(--blue-light); 
+    --primary-dark: #0263c5; 
+
+    --secondary: var(--green-dark); 
+    --secondary-light: var(--green-light); 
+    --secondary-dark: #0a9b2e; 
+     
+    --tertiary: var(--orange-dark); 
+    --tertiary-light: var(--orange-light);  
+    --tertiary-dark: #ff780a; 
+
+    --bg-color: var(--gray-6-dark);
+    --text-color: var(--white);
+    --text-selection-bg: #ffcee8;
+    --text-selection-color:var(--primary);
+
+    --side-content-bg: var(--primary);
+    --view-load-spinner: var(--gray-5-dark);
+    --no-landscape-bg: var(--white);
+}
+

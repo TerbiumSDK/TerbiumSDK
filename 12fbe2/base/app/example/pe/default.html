@@ -1,0 +1,69 @@
+<tb-body>  
+    <tb-content id="mainBodyContent"></tb-content>
+</tb-body>
+<tb-footer height="54px">
+    <tb-row class="footer-navigation">
+        <tb-cell full-height>
+            <tb-content on-click="loadContent($event, 'content-a')" group-id="footer-navigation" center class="footer-navigation-item" group-active>
+                <tb-content center>
+                    <tb-icon text-size="22px">&#xf005</tb-icon>
+                </tb-content>
+            </tb-content> 
+        </tb-cell>
+        <tb-cell full-height>
+            <tb-content on-click="loadContent($event, 'content-b')" group-id="footer-navigation" center class="footer-navigation-item">
+                <tb-content center>
+                    <tb-icon text-size="22px">&#xf004</tb-icon>
+                </tb-content>
+            </tb-content> 
+        </tb-cell>
+
+        <tb-cell full-height>
+            <tb-content on-click="OpenActions()" center class="footer-navigation-item-quick">
+                <tb-content center>
+                    <tb-icon text-size="26px">&#xf067</tb-icon>
+                </tb-content>
+            </tb-content> 
+        </tb-cell>
+
+        <tb-cell full-height>
+            <tb-content on-click="loadContent($event, 'content-a')" group-id="footer-navigation" center class="footer-navigation-item">
+                <tb-content center>
+                <tb-icon text-size="22px">&#xf500</tb-icon>
+                </tb-content>
+            </tb-content> 
+        </tb-cell>
+        <tb-cell full-height>
+            <tb-content on-click="loadContent($event, 'content-b')" group-id="footer-navigation" center class="footer-navigation-item">
+                <tb-content center>
+                    <tb-icon text-size="22px">&#xf4b6</tb-icon>
+                    <tb-content class="footer-icon-count"></tb-content>
+                </tb-content>
+            </tb-content> 
+        </tb-cell>
+    </tb-row>
+</tb-footer>
+<tb-options-dialog id="footerActionDialog">
+    <tb-options-dialog-content height="102px"> 
+        <tb-button class="quick-explore-action dialog-action-button-text">
+            <tb-row>
+                <tb-cell align-left>
+                    <tb-text class="dialog-action-button-text" color="inherit">Action A</tb-text>
+                </tb-cell>
+                <tb-cell width="30px" align-right>
+                    <tb-icon color="inherit" text-size="inherit">&#xf044</tb-icon> 
+                </tb-cell>
+                </tb-row>
+        </tb-button>
+        <tb-button class="quick-explore-action">
+            <tb-row>
+                <tb-cell align-left>
+                    <tb-text class="dialog-action-button-text" color="inherit">Action B</tb-text>
+                </tb-cell>
+                <tb-cell width="30px" align-right>
+                    <tb-icon color="inherit" text-size="inherit">&#xf4b6</tb-icon> 
+                </tb-cell>
+                </tb-row>
+        </tb-button>
+    </tb-options-dialog-content> 
+</tb-options-dialog>

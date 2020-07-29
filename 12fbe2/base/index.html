@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'self' data: 'unsafe-inline' 'unsafe-eval' gap: cdvfile: file://* http://* https://* blob:; script-src * 'self' data: 'unsafe-inline' 'unsafe-eval' gap: cdvfile: blob:; style-src * 'self' data: 'unsafe-inline' gap: cdvfile:; img-src * 'self' data: gap: cdvfile: blob:; font-src * 'self' data:; connect-src * 'self' gap: cdvfile: blob: data:; media-src * 'self' gap: cdvfile: data; object-src * 'self' blob: cdvfile: data">
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico?v=1.0.0.1" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, shrink-to-fit=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta http-equiv="cleartype" content="on" />
+    <meta name="HandheldFriendly" content="true" /> 
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff"> 
+
+    <title>Terbium SDK - Example</title>
+    <meta name="description" content="Terbium SDK is a UXCL SDK for all developers. Build amazing cross platform mobile, web, and desktop apps all with one shared code base and native level performance.">
+   
+    <style type="text/css">   
+        /*
+            Apple San Fransico Fonts
+            https://developer.apple.com/fonts/
+        */
+        @font-face{font-display:block;font-family:'SF Medium';src:url(css/fonts/woff/SFProDisplay-Medium.woff2) format('woff2');font-weight:500;font-style:normal}@font-face{font-display:block;font-family:'SF Black';src:url(css/fonts/woff/SFProDisplay-Black.woff2) format('woff2');font-weight:900;font-style:normal}@font-face{font-display:block;font-family:'SF Bold';src:url(css/fonts/woff/SFProDisplay-Bold.woff2) format('woff2');font-weight:700;font-style:normal}@font-face{font-display:block;font-family:'SF Regular';src:url(css/fonts/woff/SFProDisplay-Regular.woff2) format('woff2');font-weight:400;font-style:normal}@font-face{font-display:block;font-family:'SF Light';src:url(css/fonts/woff/SFProDisplay-Light.woff2) format('woff2');font-weight:200;font-style:normal}@font-face{font-display:block;font-family:'SF Heavy';src:url(css/fonts/woff/SFProDisplay-Heavy.woff2) format('woff2');font-weight:900;font-style:normal}@font-face{font-display:block;font-family:'SF SemiBold';src:url(css/fonts/woff/SFProDisplay-Semibold.woff2) format('woff2');font-weight:600;font-style:normal}@font-face{font-family:'Font Awesome';font-style:normal;font-weight:900;font-display:block;src:url(css/fonts/fa/fa-solid-900.woff2) format("woff2"),url(css/fonts/fa/fa-solid-900.woff) format("woff"),url(css/fonts/fa/fa-solid-900.ttf) format("truetype")}.terbium-page-load{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(255,255,255,1);pointer-events:none!important;touch-action:none!important;cursor:none!important;z-index:2;opacity:1}.terbium-page-load .terbium-page-main-load-wrap{margin-left:-19px;margin-top:-19px;overflow:visible;position:absolute;transform:translate(-50%,-50%);left:50%;top:50%;width:38px;height:38px}.terbium-page-load .terbium-page-main-load-spin{width:38px;height:38px}.terbium-content-load{position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(255,255,255,1);pointer-events:none!important;touch-action:none!important;cursor:none!important;z-index:2;opacity:0}.terbium-content-load .terbium-content-load-wrap{margin-left:-19px;margin-top:-19px;overflow:visible;position:absolute;transform:translate(-50%,-50%);left:50%;top:50%;width:38px;height:38px}.terbium-content-load .terbium-content-load-spin{width:38px!important;height:38px!important}.rotate{transform:translateZ(0); animation:spin-icon 1.8s linear 0s infinite;will-change:transform}@keyframes spin-icon{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
+    
+
+        /*Setup some base classes for loading, we do this so the loading screen can load before anything else.*/
+        .tbc1{fill:#e01e5a;}
+        .tbc2{fill:#2fb67c;}
+        .tbc3{fill:#ecb22d;}
+        .tbc4{fill:#e01e5a;}
+        .tbc5{fill:#2fb67c;}
+        .tbc6{fill:#ecb22d;}
+        .tbc7{fill:#000000;}
+        .dark-mode .tbc7{fill:#ffffff;}
+
+        /*Some dark mode settings so we can prevent any kind of "Flashing".*/
+        html..dark-mode,
+        .dark-mode .app-body,
+        .dark-mode .terbium-page-load,
+        .dark-mode .terbium-content-load{background-color:#000000 !important;} 
+
+        .force-mode.terbium-page-load,
+        .force-mode.terbium-page-load *{background-color:#000000 !important;} 
+    </style>
+
+    <!--Push CSS Async instead of blocking-->
+    <!--This example uses the latest from the terbiumsdk cdn you should download and load this file locally-->
+    <link rel="stylesheet" href="https://cdn.terbiumsdk.com/terbium.framework.latest.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="css/index.css" media="print" onload="this.media='all'">  
+    <link rel="stylesheet" href="css/index.dark.css" media="print" onload="this.media='all'">  
+</head>
+<body  class="app-body">  
+    <!--The main loading screen is here instead of injected so the user is presented with UI before anything else happens.-->
+    <div class="terbium-page-load" disable-click><div class="terbium-page-main-load-wrap rotate"><svg xmlns="http://www.w3.org/2000/svg" class="terbium-page-main-load-spin" viewBox="0 0 873 977"><path d="M436.5 0C501.9 0 555 53.1 555 118.5 555 183.9 501.9 237 436.5 237 371.1 237 318 183.9 318 118.5 318 53.1 371.1 0 436.5 0Z" class="tbc1"/><path d="M754.5 185C819.9 185 873 238.1 873 303.5 873 368.9 819.9 422 754.5 422 689.1 422 636 368.9 636 303.5 636 238.1 689.1 185 754.5 185Z" class="tbc2"/><path d="M754.5 557C819.9 557 873 610.1 873 675.5 873 740.9 819.9 794 754.5 794 689.1 794 636 740.9 636 675.5 636 610.1 689.1 557 754.5 557Z" class="tbc3"/><path d="M436.5 740C501.9 740 555 793.1 555 858.5 555 923.9 501.9 977 436.5 977 371.1 977 318 923.9 318 858.5 318 793.1 371.1 740 436.5 740Z" class="tbc4"/><path d="M118.5 557C183.9 557 237 610.1 237 675.5 237 740.9 183.9 794 118.5 794 53.1 794 0 740.9 0 675.5 0 610.1 53.1 557 118.5 557Z" class="tbc5"/><path d="M118.5 185C183.9 185 237 238.1 237 303.5 237 368.9 183.9 422 118.5 422 53.1 422 0 368.9 0 303.5 0 238.1 53.1 185 118.5 185Z" class="tbc6"/><path d="M437 341.9C518 341.9 583.7 407.5 583.7 488.5 583.7 569.5 518 635.2 437 635.2 356 635.2 290.3 569.5 290.3 488.5 290.3 407.5 356 341.9 437 341.9Z" class="tbc7"/></svg></div></div>
+  
+    <!--Load the terbium.js which is just a loader file if you choose not to use a loader file then put, terbium.framework reference here.-->
+   <script src="js/terbium.js"></script>  
+    
+    <!--Optional: The below js will enable dark mode on the loader screen before it is shown to the user, this is jsut a quick way to do it there are lots of other ways this can be done.-->
+    <script type="text/javascript">try{let e=document.documentElement.querySelector(".terbium-page-load");_dark()&&e.classList.add("force-mode"),e.style.display="block"}catch(e){}</script>   
+   
+    <!--NOTE: Do not put any html inside the body tag, TerbiumSDK rewrites the content inside here, you can put javascript in here but html content will be rewritten.-->
+</body>
+</html>

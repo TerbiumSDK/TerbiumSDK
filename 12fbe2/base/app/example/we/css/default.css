@@ -1,0 +1,46 @@
+.page-css { }
+ 
+body.terbium-desktop{background-color: #f5f4f3;}
+.page-css .page-header {
+    display:block !important;
+    position:sticky;
+    left:0px;
+    top:0px;
+    width:100%; 
+    z-index:10;
+    box-sizing:content-box;  
+    height: var(----desktop-header-height);
+    background-color:var(--desktop-header-bg-color);
+    color: var(--white);
+}
+   
+
+.page-css .page-main-header {
+    cursor: default;
+    margin: 0 -10px;
+    width: auto;
+    height: var(--desktop-header-height);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between; 
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 0 22px;
+    position: relative;
+    z-index: 2; 
+}
+ 
+.page-css .page-main-header .item { 
+    z-index: 9;
+    position:inline-block; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:var(--white);
+}
+ 
+.page-css .page-body {
+    margin-top: calc(var(--desktop-header-height) + 6px);  
+}
+  

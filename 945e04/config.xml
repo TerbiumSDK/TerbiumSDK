@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.terbiumsdk.example" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+  <name>TerbiumSDK</name>
+  <description>
+    Terbium SDK Example Cordova Project
+  </description>
+  <author email="support@terbiumsdk.com" href="https://www.terbiumsdk.com">
+    Terbium SDK Support
+  </author>
+  <content src="index.html" />
+  <preference name="scheme" value="terbium" />
+  <preference name="hostname" value="localhost" />
+
+  <preference name="UIWebViewBounce" value="false" />
+  <preference name="StatusBarOverlaysWebView" value="true" />
+  <preference name="AllowInlineMediaPlayback" value="true" />
+  <preference name="StatusBarBackgroundColor" value="#ffffff" />
+  <preference name="StatusBarStyle" value="lightcontent" />
+  <preference name="StatusBarDefaultScrollToTop" value="true" />
+
+  <preference name="SetFullscreen" value="true" />
+  <preference name="Fullscreen" value="true" />
+  <preference name="ShowTitle" value="false" />
+  <preference name="Suppresses3DTouchGesture" value="true" />
+  <preference name="SuppressesIncrementalRendering" value="false" />
+  <preference name="SuppressesLongPressGesture" value="true" />
+  <preference name="TopActivityIndicator" value="white" />
+  <preference name="SplashScreenDelay" value="100" />
+  <preference name="AutoHideSplashScreen" value="true" />
+  <preference name="DisallowOverscroll" value="false" />
+  <preference name="InterceptRemoteRequests" value="none" />
+  <preference name="NativeXHRLogging" value="none" />
+  <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+  <preference name="EnableViewportScale" value="true" />
+
+  <plugin name="cordova-plugin-whitelist" spec="1" />
+  <access origin="*" />
+  <allow-intent href="http://*/*" />
+  <allow-intent href="https://*/*" />
+  <allow-intent href="tel:*" />
+  <allow-intent href="sms:*" />
+  <allow-intent href="mailto:*" />
+  <allow-intent href="geo:*" />
+  <hook type="before_build" src="hooks/compileSrcDirectory.js" />
+
+  <platform name="android">
+    <allow-intent href="market:*" />
+  </platform>
+  <platform name="ios">
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+  </platform>
+</widget>

@@ -1,0 +1,6 @@
+{
+  "Ignores": [ "node_modules", ".git" ],
+  "Site": "12fbe2/base/",
+  "Cordova": "945e04",
+  "Express": "1cf40a"
+}

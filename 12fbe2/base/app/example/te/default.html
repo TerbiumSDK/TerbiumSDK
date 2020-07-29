@@ -1,0 +1,39 @@
+<tb-content full> 
+    <tb-content class="left-navigation">
+        <tb-content space-top="30px">
+            <tb-image center async cover image="{{imgpath}}header-icon-white.png" width="32px" height="32px"></tb-image>
+        </tb-content>
+        <tb-content center-y width="60px">
+            <tb-content on-click="console.log('item click')" class="left-navigation-item" group-id="left-navigation" group-active>
+                <tb-icon ignore-matrix center text-size="22px">&#xf80a</tb-icon>
+            </tb-content>
+            <tb-content on-click="console.log('item click')" class="left-navigation-item" group-id="left-navigation">
+                <tb-icon ignore-matrix center text-size="22px">&#xf004</tb-icon>
+            </tb-content>
+        </tb-content>
+        <tb-content center-x bottom="20px" color="--white"> 
+            <tb-icon ignore-matrix text-size="22px" flip-caption-x>&#xf08b</tb-icon>
+        </tb-content>
+    </tb-content>
+    <tb-content class="page-body-wrap">
+        <tb-scroll vertical>
+            <tb-content class="page-body">
+                <tb-content class="center-content"> 
+                    <tb-text class="text-section-header">Example Site</tb-text> 
+                    <tb-text class="text-section">
+                        This is just and example "Tablet/te experience" site you can delete the entire example folder. This site is only to show that the site is running and was built in less than
+                        10 minutes.
+                    </tb-text> 
+                    <tb-text class="text-section-header" space-top="60px">Example Styles</tb-text> 
+                    <tb-text class="text-section">
+                        The example data and styles on this site are just quick css classes for rendering content out
+                        in a way that looks half way decent and while you can use them for your own stuff keep in mind
+                        that they are super quick and dirty just so you have something to see when you load up the newly
+                        created site.
+                    </tb-text> 
+                </tb-content>
+            </tb-content>
+        </tb-scroll>
+    </tb-content> 
+    <tb-include class="page-footer" path="includes/footer/" page="default" params="{}"></tb-include>
+</tb-content>

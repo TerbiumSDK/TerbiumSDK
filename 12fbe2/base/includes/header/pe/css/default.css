@@ -1,0 +1,10 @@
+.page-css{}
+.page-css .section-header-caption{font-size:34px; line-height:32px; color:var(--primary); letter-spacing:.022em;}
+
+.page-css .section-user-image{top:2px; margin-right:6px; width:40px; height:40px; border-radius:100%; overflow:hidden; background-color: var(--gray-2-light); box-shadow:0px 4px 18px -8px rgba(0, 0, 0, 0.5);}
+ 
+.page-css .window-edit-button-header{width:20px; height:20px; border-radius:100%; background-color:var(--gray-6-light); color:var(--gray-4-dark); box-shadow:0px 4px 18px -8px rgba(0, 0, 0, 0.5);}
+.page-css .window-edit-button-header.on{ background-color:var(--gray-6-light); color:var(--tertiary); }
+
+.page-css .edit-profile-header{flex: 0 0 30px; margin-right:12px; top:-6px;}
+.page-css .header-profile-image{flex: 0 0 40px; top:-6px;}

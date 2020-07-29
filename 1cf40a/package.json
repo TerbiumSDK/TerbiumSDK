@@ -1,0 +1,23 @@
+{
+  "name": "terbiumsdk-server",
+  "version": "2.1.2",
+  "description": "Terbium SDK Development Node/Express Server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Christopher Bishop",
+  "license": "MIT",
+  "repository": "/",
+  "dependencies": {
+    "commander": "^4.1.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "express-modify-response": "^1.0.2",
+    "html-minifier": "^4.0.0",
+    "opener": "^1.5.1",
+    "uglify-es": "^3.3.9",
+    "uuid": "^3.4.0",
+    "open": "^7.0.1"
+  }
+}
