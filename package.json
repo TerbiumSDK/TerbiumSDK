@@ -1,6 +1,6 @@
 {
   "name": "terbiumsdk",
-  "version": "2.2.4",
+  "version": "14.0.0",
   "description": "Terbium SDK Framework",
   "main": "index.js",
   "scripts": {
