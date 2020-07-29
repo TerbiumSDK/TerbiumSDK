@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db 
+platforms
+node_modules/
+1cf40a/node_modules
+package-lock.json
